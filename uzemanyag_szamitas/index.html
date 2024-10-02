@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Üzemanyag számítás</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container col-5">
+            <h1>Üzemanyag számítás</h1>
+            <div class="col-sm mt-4" id="first">
+                <h4>Üzemanyag típusa</h4>
+                <div class="col-sm mt-4 m-auto">
+                    <label for="benzin">Benzin</label>
+                    <input name="uzemanyag" type="radio" id="benzin">
+                </div>
+                <div class="col-sm">
+                    <label for="gazolaj">Gázolaj</label>
+                    <input name="uzemanyag" type="radio" id="gazolaj">
+                </div>
+                <div class="col-sm">
+                    <label for="elektromos">Elektromos</label>
+                    <input name="uzemanyag" type="radio" id="elektromos">
+                </div>
+                <div class="col-sm">
+                    <label for="lpg">LPG</label>
+                    <input name="uzemanyag" type="radio" id="lpg">
+                </div>
+            </div>
+        <div id="second" class="col-sm mt-4">
+            <h4>Amortizációs díj</h4>
+            <div class="col-sm mt-4 m-auto">
+                <label for="18">18</label>
+                <input name="avulas" type="radio" id="18">
+            </div>
+            <div class="col-sm">
+                <label for="30">30</label>
+                <input name="avulas" type="radio" id="30">
+            </div>
+        </div>
+        <div class="col-4 m-3">
+            <input type="text" id="forintLiterenkent">
+            <label for="forintLiterenkent">Ft/l</label>
+        </div>
+        <div class="col-sm mt-4 m-auto">
+            <select name="valaszto" id="valaszto">
+                <option value="1000" label="1000-ig"></option>
+                <option value="1500" label="1001-1500"></option>
+                <option value="2000" label="1501-2000"></option>
+                <option value="3000" label="2001-3000"></option>
+                <option value="3001" label="3001 felett"></option> 
+            </select>
+        </div>
+        <div class="col-4 m-3">
+            <label for="rendszam">Rendszám:</label>
+            <input type="text" id="rendszam">
+        </div>
+        <div class="col-4 m-3">
+            <label for="gyarto">Gyártó/típus:</label>
+            <input type="text" id="gyarto">
+        </div>
+        <div class="col-4 m-3">
+            <label for="honnanHova">Honnan-hova:</label>
+            <input type="text" id="honnanHova">
+        </div>
+        <div class="col-4 m-3">
+            <label for="megtettTav">Megtett táv:</label>
+            <input type="text" id="megtettTav">
+        </div>
+        <div class="col-sm">
+            <input type="button" value="Kalkulál">
+        </div>
+    </div>
+</body>
+</html>
