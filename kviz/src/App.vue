@@ -21,7 +21,7 @@
         </select>
       </div>
       <div class="question">
-        <p>3. Hawk ...</p>
+        <p>3. Ytong ...</p>
         <input type="text" v-model="answers.q3" />
       </div>
 
@@ -68,7 +68,7 @@ const answers = ref({
 const correctAnswers = ref({
   q1: "true",
   q2: "C#",
-  q3: "Tuah",
+  q3: "Imre",
   q4: ["Hidrogen", "Oxigen"],
 });
 
