@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import { useTasksStore } from '../store/tasks';
+import { useTasksStore } from '../stores/tasks';
 
 export default {
   setup() {
