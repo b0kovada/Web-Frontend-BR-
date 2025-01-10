@@ -2,9 +2,7 @@
 
 export const useTasksStore = defineStore('tasks', {
     state: () => ({
-        tasks: [
-            { id: 1, title: 'Első feladat', desc: 'Ez egy minta feladat', isFinished: false, deadline: '2025-01-15' },
-        ],
+        tasks: [],
     }),
     actions: {
         addTask(task) {

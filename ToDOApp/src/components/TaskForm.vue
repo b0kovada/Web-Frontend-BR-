@@ -14,18 +14,23 @@
 </template>
 
 <script>
-export default {
-  props: ['taskData'],
-  data() {
-    return {
-      task: { ...this.taskData },
+    export default {
+        props: {
+            taskData: {
+                type: Object,
+                default: () => ({ title: '', desc: '', deadline: '', isFinished: false }),
+            },
+        },
+        data() {
+            return {
+                task: { ...this.taskData },
+            };
+        },
+        emits: ['submit'],
+        methods: {
+            handleSubmit() {
+                this.$emit('submit', this.task);
+            },
+        },
     };
-  },
-  emits: ['submit'],
-  methods: {
-    handleSubmit() {
-      this.$emit('submit', this.task);
-    },
-  },
-};
 </script>
